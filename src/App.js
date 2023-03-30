@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
 
+import {
+  BrowserRouter as R,
+  Routes, 
+  Route,
+  Link
+} from "react-router-dom";
+import axios from 'axios';
+import Ricks from './ricks';
+import { useState } from 'react';
+
+const RandomRick = () => {
+  return(
+    <h1 className="titleText">Welcome to the Rick Randomizer</h1>
+  )
+}
+
+
+
+
+
+
 function App() {
+  const [r, getR] = useState(Math.floor(Math.random() * 826)+1);
+
+  const handleClick = () => {
+    getR(Math.floor(Math.random() * 826)+1)
+  }
+  
   return (
+    <R>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RandomRick />
+     <Link to = {`/${r}`} onClick={handleClick} className="randomButton">Random Rick</Link>
     </div>
+    <Routes>
+      <Route path="/:c_id" element={<Ricks />} />
+    </Routes>
+    </R>
   );
 }
 

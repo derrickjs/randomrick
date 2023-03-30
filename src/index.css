@@ -11,3 +11,104 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+
+a:-webkit-any-link{
+  padding:.5em;
+  font-size: 1.5em;
+  color: black;
+  margin: 1%;
+  text-decoration: none;
+  border-radius: 10%;
+  background-color: white;
+  border: red solid 1px;
+  opacity: 95%;
+  
+
+  
+}
+
+.titleText{
+  margin-bottom: 5%;
+  text-align: center;
+
+}
+
+
+
+a:hover {
+ background-color: #d7d7d7;
+}
+
+
+.App {
+  text-align: center;
+}
+
+
+
+
+input {
+  box-sizing: border-box;
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+  margin: 2rem auto;
+  margin-top: 6%;
+
+}
+
+input:hover{
+  background-color: #d7d7d7;
+}
+
+body{
+  background-image: url("https://res.cloudinary.com/derrickstahlman/image/upload/v1679926314/rick_guelzz.png");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: grey;
+
+}
+
+
+p{
+  font-size: 3em;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  
+}
+
+
+
+h2 {
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  
+  
+}
+
+.image {
+  border: red 3px solid;
+  border-radius: 10%;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  }
+
+.project{
+  background-color: lightskyblue;
+  width:30%;
+  border: black 3px solid;
+  border-radius: 10%;
+  margin: 0 auto;
+}
